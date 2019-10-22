@@ -1,0 +1,337 @@
+2019-10-21 14:16:17.139  INFO 1268 --- [http-nio-8100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 14:16:17.139  INFO 1268 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 14:16:17.144  INFO 1268 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-10-21 14:16:17.151  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 14:16:17.151  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 14:16:17.151  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 1. from: EUR
+2019-10-21 14:16:17.151  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 14:16:17.151  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 200
+2019-10-21 14:16:17.151  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/EUR/to/INR
+2019-10-21 14:16:17.172  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 14:16:17.172  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 14:16:17.172  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10002
+2019-10-21 14:16:17.172  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 2. from: EUR
+2019-10-21 14:16:17.172  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 14:16:17.172  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 80.00
+2019-10-21 14:16:17.172  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:09:57.373  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:09:57.378  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:09:57.378  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 1. from: EUR
+2019-10-21 15:09:57.378  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:09:57.378  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 10000
+2019-10-21 15:09:57.378  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/EUR/to/INR
+2019-10-21 15:09:57.454  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:09:57.454  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:09:57.455  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10002
+2019-10-21 15:09:57.455  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 2. from: EUR
+2019-10-21 15:09:57.455  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:09:57.455  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 80.00
+2019-10-21 15:09:57.455  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:34:11.509  WARN 1268 --- [http-nio-8100-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.math.BigDecimal'; nested exception is java.lang.NumberFormatException]
+2019-10-21 15:36:09.138  INFO 1268 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 15:36:10.984  INFO 1268 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e159e554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 15:36:11.726  INFO 1268 --- [restartedMain] urrencyConversionMicroserviceApplication : No active profile set, falling back to default profiles: default
+2019-10-21 15:36:13.250  INFO 1268 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44699ed0-ca86-35dc-9bf2-231086236746
+2019-10-21 15:36:13.327  INFO 1268 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e159e554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 15:36:13.844  INFO 1268 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2019-10-21 15:36:13.846  INFO 1268 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 15:36:13.848  INFO 1268 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 15:36:13.882  INFO 1268 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 15:36:13.882  INFO 1268 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2152 ms
+2019-10-21 15:36:13.920  WARN 1268 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-10-21 15:36:13.921  INFO 1268 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-10-21 15:36:14.056  INFO 1268 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 15:36:14.170  INFO 1268 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 15:36:14.658  INFO 1268 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2019-10-21 15:36:15.110  INFO 1268 --- [restartedMain] urrencyConversionMicroserviceApplication : Started CurrencyConversionMicroserviceApplication in 4.739 seconds (JVM running for 5596.85)
+2019-10-21 15:36:15.112  INFO 1268 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-21 15:36:25.630  INFO 1268 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 15:36:27.295  INFO 1268 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e159e554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 15:36:27.862  INFO 1268 --- [restartedMain] urrencyConversionMicroserviceApplication : No active profile set, falling back to default profiles: default
+2019-10-21 15:36:28.310  INFO 1268 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44699ed0-ca86-35dc-9bf2-231086236746
+2019-10-21 15:36:28.343  INFO 1268 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e159e554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 15:36:28.422  INFO 5884 --- [restartedMain] urrencyConversionMicroserviceApplication : No active profile set, falling back to default profiles: default
+2019-10-21 15:36:28.532  INFO 1268 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2019-10-21 15:36:28.534  INFO 1268 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 15:36:28.534  INFO 1268 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 15:36:28.596  INFO 1268 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 15:36:28.596  INFO 1268 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 731 ms
+2019-10-21 15:36:28.666  WARN 1268 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-10-21 15:36:28.667  INFO 1268 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-10-21 15:36:28.777  INFO 1268 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 15:36:28.906  INFO 1268 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 15:36:29.633  INFO 1268 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2019-10-21 15:36:29.977  INFO 5884 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=44699ed0-ca86-35dc-9bf2-231086236746
+2019-10-21 15:36:30.143  INFO 5884 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$65bea3b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 15:36:30.333  INFO 1268 --- [restartedMain] urrencyConversionMicroserviceApplication : Started CurrencyConversionMicroserviceApplication in 4.084 seconds (JVM running for 5612.073)
+2019-10-21 15:36:30.382  INFO 1268 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-21 15:36:31.761  INFO 5884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2019-10-21 15:36:31.839  INFO 5884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 15:36:31.843  INFO 5884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 15:36:32.222  INFO 5884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 15:36:32.222  INFO 5884 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3776 ms
+2019-10-21 15:36:32.327  WARN 5884 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-10-21 15:36:32.328  INFO 5884 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-10-21 15:36:32.336  WARN 5884 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-10-21 15:36:32.336  INFO 5884 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-10-21 15:36:32.871  INFO 5884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 15:36:33.277  WARN 5884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2019-10-21 15:36:33.914 ERROR 5884 --- [restartedMain] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8100]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.devopsschool.springboot.microservice.example.currencyconversion.CurrencyConversionMicroserviceApplication.main(CurrencyConversionMicroserviceApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 19 common frames omitted
+
+2019-10-21 15:36:33.924  INFO 5884 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-21 15:36:33.937  INFO 5884 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-21 15:36:33.942  INFO 5884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 15:36:33.955 ERROR 5884 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8100 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8100, or configure this application to listen on another port.
+
+2019-10-21 15:36:35.541  INFO 1268 --- [http-nio-8100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 15:36:35.543  INFO 1268 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 15:36:35.550  INFO 1268 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-10-21 15:36:35.554  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:36:35.554  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:36:35.555  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 1. from: EUR
+2019-10-21 15:36:35.555  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:36:35.555  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 10000
+2019-10-21 15:36:35.555  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/EUR/to/INR
+2019-10-21 15:36:35.580  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:36:35.581  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:36:35.581  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10002
+2019-10-21 15:36:35.581  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 2. from: EUR
+2019-10-21 15:36:35.581  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:36:35.581  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 80.00
+2019-10-21 15:36:35.581  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:36:37.057  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:36:37.057  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:36:37.058  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 1. from: EUR
+2019-10-21 15:36:37.058  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:36:37.058  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 10000
+2019-10-21 15:36:37.058  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/EUR/to/INR
+2019-10-21 15:36:37.079  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:36:37.080  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:36:37.080  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10002
+2019-10-21 15:36:37.080  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 2. from: EUR
+2019-10-21 15:36:37.080  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:36:37.080  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 80.00
+2019-10-21 15:36:37.080  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:36:41.616  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:36:41.617  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:36:41.617  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 1. from: EUR
+2019-10-21 15:36:41.617  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:36:41.617  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 500
+2019-10-21 15:36:41.617  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/EUR/to/INR
+2019-10-21 15:36:41.637  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:36:41.637  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:36:41.637  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10002
+2019-10-21 15:36:41.637  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 2. from: EUR
+2019-10-21 15:36:41.637  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:36:41.637  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 80.00
+2019-10-21 15:36:41.637  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:36:53.425  WARN 1268 --- [http-nio-8100-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.math.BigDecimal'; nested exception is java.lang.NumberFormatException]
+2019-10-21 15:38:38.158  WARN 1268 --- [http-nio-8100-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.math.BigDecimal'; nested exception is java.lang.NumberFormatException]
+2019-10-21 15:40:18.235  WARN 1268 --- [http-nio-8100-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.math.BigDecimal'; nested exception is java.lang.NumberFormatException]
+2019-10-21 15:40:35.567  WARN 1268 --- [http-nio-8100-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.math.BigDecimal'; nested exception is java.lang.NumberFormatException]
+2019-10-21 15:42:10.778  WARN 1268 --- [http-nio-8100-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.math.BigDecimal'; nested exception is java.lang.NumberFormatException]
+2019-10-21 15:42:27.369  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:42:27.369  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:42:27.369  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 1. from: AUD
+2019-10-21 15:42:27.370  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:42:27.370  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:42:27.370  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/AUD/to/INR
+2019-10-21 15:42:27.392  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:42:27.392  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:42:27.392  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10003
+2019-10-21 15:42:27.393  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 2. from: AUD
+2019-10-21 15:42:27.393  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:42:27.393  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 25.00
+2019-10-21 15:42:27.393  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:42:42.105  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:42:42.105  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:42:42.105  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 1. from: AUD
+2019-10-21 15:42:42.105  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:42:42.106  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:42:42.106  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/AUD/to/INR
+2019-10-21 15:42:42.120  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:42:42.120  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:42:42.120  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10003
+2019-10-21 15:42:42.120  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 2. from: AUD
+2019-10-21 15:42:42.120  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:42:42.120  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 25.00
+2019-10-21 15:42:42.120  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:47:46.994  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:47:46.995  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:47:46.995  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 1. from: EUR
+2019-10-21 15:47:46.995  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:47:46.995  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:47:46.995  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/EUR/to/INR
+2019-10-21 15:47:47.011  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:47:47.011  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:47:47.012  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10002
+2019-10-21 15:47:47.012  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 2. from: EUR
+2019-10-21 15:47:47.012  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:47:47.012  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 80.00
+2019-10-21 15:47:47.012  INFO 1268 --- [http-nio-8100-exec-7] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:48:57.445  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:48:57.446  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:48:57.446  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : 1. from: AUD
+2019-10-21 15:48:57.446  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:48:57.446  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:48:57.446  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/AUD/to/INR
+2019-10-21 15:48:57.463  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:48:57.463  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:48:57.463  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10003
+2019-10-21 15:48:57.463  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : 2. from: AUD
+2019-10-21 15:48:57.463  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:48:57.463  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 25.00
+2019-10-21 15:48:57.463  INFO 1268 --- [http-nio-8100-exec-9] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:50:50.765  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:50:50.765  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:50:50.765  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 1. from: AUD
+2019-10-21 15:50:50.765  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:50:50.765  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:50:50.765  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/AUD/to/INR
+2019-10-21 15:50:50.785  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:50:50.785  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:50:50.785  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10003
+2019-10-21 15:50:50.785  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 2. from: AUD
+2019-10-21 15:50:50.785  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:50:50.785  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 25.00
+2019-10-21 15:50:50.785  INFO 1268 --- [http-nio-8100-exec-1] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:51:08.667  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:51:08.667  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:51:08.668  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : 1. from: USD
+2019-10-21 15:51:08.668  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:51:08.668  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:51:08.668  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/USD/to/INR
+2019-10-21 15:51:08.685  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:51:08.685  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:51:08.686  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10001
+2019-10-21 15:51:08.686  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : 2. from: USD
+2019-10-21 15:51:08.686  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:51:08.686  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 65.00
+2019-10-21 15:51:08.686  INFO 1268 --- [http-nio-8100-exec-2] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:51:32.395  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:51:32.396  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:51:32.396  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 1. from: USD
+2019-10-21 15:51:32.396  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:51:32.396  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:51:32.396  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/USD/to/INR
+2019-10-21 15:51:32.412  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:51:32.412  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:51:32.412  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10001
+2019-10-21 15:51:32.412  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 2. from: USD
+2019-10-21 15:51:32.412  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:51:32.412  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 70.00
+2019-10-21 15:51:32.412  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:51:34.240  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:51:34.241  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:51:34.241  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 1. from: USD
+2019-10-21 15:51:34.241  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:51:34.241  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:51:34.241  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/USD/to/INR
+2019-10-21 15:51:34.256  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:51:34.257  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:51:34.257  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10001
+2019-10-21 15:51:34.257  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 2. from: USD
+2019-10-21 15:51:34.257  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:51:34.257  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 70.00
+2019-10-21 15:51:34.257  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 15:51:35.140  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 15:51:35.140  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 15:51:35.140  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 1. from: USD
+2019-10-21 15:51:35.140  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 15:51:35.140  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 15:51:35.140  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/USD/to/INR
+2019-10-21 15:51:35.155  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 15:51:35.155  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 15:51:35.155  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10001
+2019-10-21 15:51:35.155  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 2. from: USD
+2019-10-21 15:51:35.156  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 15:51:35.156  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 70.00
+2019-10-21 15:51:35.156  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 16:07:28.705  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 16:07:28.706  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 16:07:28.706  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 1. from: EUR
+2019-10-21 16:07:28.706  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 16:07:28.706  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 16:07:28.706  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/EUR/to/INR
+2019-10-21 16:07:28.726  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 16:07:28.727  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 16:07:28.727  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10002
+2019-10-21 16:07:28.727  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 2. from: EUR
+2019-10-21 16:07:28.727  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 16:07:28.727  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 80.00
+2019-10-21 16:07:28.727  INFO 1268 --- [http-nio-8100-exec-3] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 16:08:13.192  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 16:08:13.192  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 16:08:13.192  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 1. from: AUD
+2019-10-21 16:08:13.192  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 16:08:13.193  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 16:08:13.193  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/AUD/to/INR
+2019-10-21 16:08:13.212  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 16:08:13.212  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 16:08:13.212  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10003
+2019-10-21 16:08:13.212  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 2. from: AUD
+2019-10-21 16:08:13.212  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 16:08:13.212  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 25.00
+2019-10-21 16:08:13.212  INFO 1268 --- [http-nio-8100-exec-4] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000
+2019-10-21 16:09:10.981  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : In CurrencyConversionController...
+2019-10-21 16:09:10.982  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Received following parameters in the request:
+2019-10-21 16:09:10.982  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 1. from: AUD
+2019-10-21 16:09:10.982  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 2. to: INR
+2019-10-21 16:09:10.982  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 3. quantity: 100
+2019-10-21 16:09:10.982  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Now connecting to: http://localhost:8000//forex-microservice/currency-exchange/from/AUD/to/INR
+2019-10-21 16:09:10.999  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : Connection to forex micro service was successful!
+2019-10-21 16:09:10.999  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : We have received following parameters in the response from forex micro service: 
+2019-10-21 16:09:11.000  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 1. id: 10003
+2019-10-21 16:09:11.000  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 2. from: AUD
+2019-10-21 16:09:11.000  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 3. to: INR
+2019-10-21 16:09:11.000  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 4. conversionMultiple: 25.00
+2019-10-21 16:09:11.000  INFO 1268 --- [http-nio-8100-exec-5] c.d.s.m.e.c.CurrencyConversionController : 5. port: 8000

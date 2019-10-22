@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>devopsschool ui microservice</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<nav id="sp_hospital_dash_nav" class="navbar navbar-expand-lg navbar-light py-0"
+	style="background-color:azure;position:fixed;top:0;right:0;left:0;z-index:1030;">
+
+	<a class="navbar-brand" href="/"><img src="devopsschool-logo.png" alt="Logo" style="width: 170pt;"></a>
+	 
+	</nav>
+	<div id='app' class="" style="margin-top: 5rem!important;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card">
+						<div class="card-header"><h4>Currency Exchange Form</h4></div>
+						<div class="card-body">
+							<form  method="POST" action="" id="first-quote-form" class="">
+								<div class="form-group">
+									<label for="quantity">Quantity:</label>
+									<input type="text" class="form-control" name="quantity" id="quantity" placeholder="Quantity" required>
+								</div>
+								<div class="form-group">
+									<label for="from">From:</label>
+									<select class="form-control" id="from" name="from">
+										<option value="">Select Currency</option>
+										<option value="AUD">AUD</option>
+										<option value="EUR">EUR</option>
+										<option value="USD">USD</option>
+									</select>
+								</div>
+							<div class="form-group">
+								<label for="to">To:</label>
+								<input type="text" class="form-control" name="to" id="to" value="INR" readonly>
+							</div>
+							<hr>
+							<button type="button" onclick="getResults(this.form)" class="btn btn-primary" id="quote-submit">Submit</button>
+							</form>
+						</div>
+						<div class="card-footer">Demo by <a href="https://www.devopsschool.com/">devopsschool.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card">
+						<div class="card-header">
+							<h4>Result</h4>
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<label class="col-lg-8">Id:</label>
+								<span class="col-lg-4" id="result_id"></span>
+							</div>
+							<div class="row">
+								<label class="col-lg-8">From:</label>
+								<span class="col-lg-4" id="result_from"></span>
+							</div>
+							<div class="row">
+								<label class="col-lg-8">To:</label>
+								<span class="col-lg-4" id="result_to"></span>
+							</div>
+							<div class="row">
+								<label class="col-lg-8">Conversion Multiple:</label>
+								<span class="col-lg-4" id="result_conversionMultiple"></span>
+							</div>
+							<div class="row">
+								<label class="col-lg-8">Quantity:</label>
+								<span class="col-lg-4" id="result_quantity"></span>
+							</div>
+							<div class="row">
+								<label class="col-lg-8">Port:</label>
+								<span class="col-lg-4" id="result_port"></span>
+							</div>
+							<hr>
+
+							<div class="row">
+								<label class="col-lg-8"><strong>Total Calculated Amount:</strong></label>
+								<span class="col-lg-4" id="result_totalCalculatedAmount"></span>
+							</div>
+						</div>
+						<div class="card-footer">
+							Demo by <a href="https://www.devopsschool.com/">devopsschool.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	function getResults(formElement) {
+		if (formElement.from.value && formElement.from.value && formElement.from.value) {
+			$.ajax({
+			    type: "GET",
+			    url: 'http://localhost:8100'
+			    	+ '/currency-conversion-microservice'
+			    	+ '/currency-converter'
+			    	+ '/from/'
+			    	+ formElement.from.value
+			    	+ '/to/'
+			    	+ formElement.to.value
+			    	+ '/quantity/'
+			    	+ formElement.quantity.value,
+			    success: function(response) {
+			      //console.log('done!');
+			      $('#result_id').text(response.id);
+			      $('#result_from').text(response.from);
+			      $('#result_to').text(response.to);
+			      $('#result_conversionMultiple').text(response.conversionMultiple);
+			      $('#result_quantity').text(response.quantity);
+			      $('#result_totalCalculatedAmount').text(response.totalCalculatedAmount);
+			      $('#result_port').text(response.port);
+			    },
+			    error: function(errorResponse) {}
+			});
+		} else {
+			alert('Please enter quantity and from currency before submitting !!');
+		}
+	}
+</script>
+</body>
+</html>
